@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: white;}
+h1   {color: black;}
+p    {color: black;}
+</style>
+</head>
+<body>
+
+<h1 style="color: black">LA Clippers Predictions</h1>
+<canvas id="myChart"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ['Paul George','Nicolas Batum', 'Patrick Beverley','DeMarcus Cousins','Amir Coffey'],
+        datasets: [{
+            label: 'Player Total Predicted Preformance Score',
+            backgroundColor: 'blue',
+            borderColor: 'rgb(255, 0, 0)',
+            data: [8.21111559125081,3.34257258747161, 2.42825860824582, 2.03932522896705,-2.56516486195566],
+        }]
+    },
+        
+    // Configuration options go here
+    options: {
+    scales: {
+            yAxes: [{
+                display: true,
+                stacked: true,
+                ticks: {
+                    min: -8, // minimum value
+                    max: 12 // maximum value
+                }
+            }]
+        }
+    }
+});
+
+
+</script>
+<canvas id="myChart"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+
+</body>
+</html>
